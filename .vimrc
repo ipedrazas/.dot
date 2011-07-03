@@ -89,3 +89,5 @@ map - <C-W><<C-W>-
 map + <C-W>><C-W>+
 
 map <F5> :NERDTreeToggle<CR>
+
+vmap <C-c> y: call system("xclip -i -selection clipboard", getreg("\""))<CR>
