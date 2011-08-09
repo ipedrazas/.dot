@@ -266,7 +266,8 @@ class Checker(object):
             # Look for imported names that aren't used.
             for importation in scope.itervalues():
                 if isinstance(importation, Importation):
-                    if not importation.used and importation.name not in all:
+                    if (not importation.used and importation.name not
+                        in all and 'pytest_funcarg__' not in importation.name):
                         self.report(
                             messages.UnusedImport,
                             importation.source,

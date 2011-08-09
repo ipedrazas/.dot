@@ -27,6 +27,7 @@ set ts=4
 set expandtab
 set sw=4
 set autoindent
+au BufWinEnter *.html set autoindent!
 
 set number
 set hlsearch
@@ -90,4 +91,6 @@ map + <C-W>><C-W>+
 
 map <F5> :NERDTreeToggle<CR>
 
-vmap <C-c> y: call system("xclip -i -selection clipboard", getreg("\""))<CR>
+"This is shit, slow and a problem because I'm always using Ctrl+C to go to
+"command mode
+"vmap <C-c> y: call system("xclip -i -selection clipboard", getreg("\""))<CR>
