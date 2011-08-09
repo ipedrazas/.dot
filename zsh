@@ -15,6 +15,7 @@ alias ssh-tunnel="ssh -p 2222 -L 1234:10.108.0.76:3306 -o ServerAliveInterval=60
 alias pep8="pep8 --ignore=E501 --show-source"
 alias ..='cd ..'
 alias ....='cd ....'
+alias pcat='pygmentize -O bg=dark'
 
 # Variables
 export EL="/home/alex/eelogic"
@@ -30,3 +31,8 @@ alias fo="cd $FO"
 alias api="cd $API"
 alias el="cd $EL"
 alias tw="cd $TW"
+
+# Virtualenvwrapper
+export PIP_RESPECT_VIRTUALENV=true
+export WORKON_HOME=~/.virtualenvs
+. /usr/local/bin/virtualenvwrapper.sh
