@@ -15,6 +15,7 @@ alias ssh-tunnel="ssh -p 2222 -L 1234:10.108.0.76:3306 -o ServerAliveInterval=60
 alias pep8="pep8 --ignore=E501 --show-source"
 alias ..='cd ..'
 alias ....='cd ....'
+alias lukkom="cd ~/lukkom_env/lukkom;source ../bin/activate"
 
 # Variables
 export EL="/home/alex/eelogic"
