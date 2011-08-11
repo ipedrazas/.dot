@@ -1,9 +1,15 @@
-Usage
----
+## Usage
 Clone the repo and link the files in your $HOME path.
 
 Example:
 
     cd $HOME;ln -s .dot/vimrc .vimrc
 
-Some files like zsh must be included in the normal .zshrc configuration file. For example, to do it on .zshrc at the end of the file write `. $HOME/.dot/zsh`.
+## Part configurations
+Some files like zsh must be included in the normal .zshrc configuration file. For example:
+
+### zsh
+Add `. ~/.dot/zsh` at the end of your `~/.zshrc`.
+
+### hg
+Add `%include ~/.dot/hg` at the end of your `~/.hgrc`.
