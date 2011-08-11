@@ -25,7 +25,7 @@ export FO="$PL/paylogic/frontoffice"
 export BO="$PL/paylogic/backoffice"
 export API="$PL/paylogic/api"
 export TW="$PL/paylogic/ticketware"
-export LK="$PL/lukkom"
+export LK="$HOME/lukkom"
 
 export EDITOR="vim"
 
