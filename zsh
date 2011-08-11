@@ -17,7 +17,7 @@ alias ..='cd ..'
 alias ....='cd ....'
 alias pcat='pygmentize -O bg=dark'
 
-# Variables
+# Path variables
 export EL="/home/alex/eelogic"
 export PL="/home/alex/paylogic"
 export FO="$PL/paylogic/frontoffice"
@@ -25,12 +25,14 @@ export BO="$PL/paylogic/backoffice"
 export API="$PL/paylogic/api"
 export TW="$PL/paylogic/ticketware"
 
+export EDITOR="vim"
+
 # Shortcuts
-alias bo="cd $BO"
-alias fo="cd $FO"
-alias api="cd $API"
-alias el="cd $EL"
-alias tw="cd $TW"
+alias bo="workon paylogic;cd $BO"
+alias fo="workon paylogic;cd $FO"
+alias api="workon paylogic;cd $API"
+alias el="workon eelogic;cd $EL"
+alias tw="workon paylogic;cd $TW"
 
 # Virtualenvwrapper
 export PIP_RESPECT_VIRTUALENV=true
