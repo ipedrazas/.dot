@@ -1,0 +1,12 @@
+[extensions]
+progress=
+color=
+pager=
+mq=
+graphlog=
+hgpaylogic=~/hgpaylogic
+schemes=
+zeroconf=
+
+[alias]
+g = glog --style compact -l 10
