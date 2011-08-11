@@ -1,0 +1,19 @@
+[ui]
+username = Álex González <alex.gonzalez@paylogic.eu>
+#verbose = True
+merge = internal:merge
+
+[extensions]
+progress=
+color=
+pager=
+mq=
+graphlog=
+hgpaylogic=~/hgpaylogic
+schemes=
+zeroconf=
+
+[alias]
+g = glog --style compact -l 10
+
+%include ~/.hgschemes
