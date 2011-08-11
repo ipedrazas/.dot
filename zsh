@@ -16,7 +16,6 @@ alias pep8="pep8 --ignore=E501 --show-source"
 alias ..='cd ..'
 alias ....='cd ....'
 alias pcat='pygmentize -O bg=dark'
-alias lukkom="cd ~/lukkom_env/lukkom;source ../bin/activate"
 
 # Path variables
 export EL="/home/alex/eelogic"
