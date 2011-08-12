@@ -27,7 +27,7 @@ set ts=4
 set expandtab
 set sw=4
 set autoindent
-au BufWinEnter *.html set autoindent!
+au BufWinEnter *.html set autoindent!|set ts=2|set sw=2
 
 set number
 set hlsearch
