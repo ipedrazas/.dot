@@ -23,10 +23,9 @@ au BufWinEnter *.py let w:m1=matchadd('ErrorMsg', '\%>120v.\+', -1)
 hi ErrorMsg ctermbg=NONE ctermfg=red
 hi ColorColumn ctermbg=black guibg=black ctermfg=NONE guifg=NONE
 
-set ts=4
 set expandtab
-set sw=4
-set autoindent
+au BufWinEnter * set autoindent|set ts=4|set sw=4
+au BufWinEnter *.css set autoindent!
 au BufWinEnter *.html set autoindent!|set ts=2|set sw=2
 
 set number
