@@ -37,6 +37,8 @@ alias el="workon eelogic;cd $EL"
 alias tw="workon paylogic;cd $TW"
 alias lk="workon lukkom;cd $LK"
 
+alias manage="python manage.py"
+
 # Virtualenvwrapper
 export PIP_RESPECT_VIRTUALENV=true
 export WORKON_HOME=~/.virtualenvs
