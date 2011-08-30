@@ -16,7 +16,6 @@ alias pep8="pep8 --ignore=E501 --show-source"
 alias ..='cd ..'
 alias ....='cd ....'
 alias pcat='pygmentize -O bg=dark'
-alias lukkom="cd ~/lukkom_env/lukkom;source ../bin/activate"
 
 # Path variables
 export EL="/home/alex/eelogic"
@@ -25,7 +24,7 @@ export FO="$PL/paylogic/frontoffice"
 export BO="$PL/paylogic/backoffice"
 export API="$PL/paylogic/api"
 export TW="$PL/paylogic/ticketware"
-export LK="$PL/lukkom"
+export LK="$HOME/lukkom"
 
 export EDITOR="vim"
 
