@@ -37,6 +37,9 @@ alias tw="workon paylogic;cd $TW"
 alias lk="workon lukkom;cd $LK"
 
 alias manage="python manage.py"
+alias mgr="python manage.py runserver"
+alias mgs="python manage.py shell"
+alias mgd="python manage.py dbshell"
 
 # Virtualenvwrapper
 export PIP_RESPECT_VIRTUALENV=true
