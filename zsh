@@ -18,6 +18,7 @@ alias ....='cd ....'
 alias pcat='pygmentize -O bg=dark'
 
 # Path variables
+export PATH=$PATH:$HOME/android-sdk-linux_x86/tools
 export EL="/home/alex/eelogic"
 export PL="/home/alex/paylogic"
 export FO="$PL/paylogic/frontoffice"
