@@ -16,6 +16,7 @@ alias pep8="pep8 --ignore=E501 --show-source"
 alias ..='cd ..'
 alias ....='cd ....'
 alias pcat='pygmentize -O bg=dark'
+alias test='python -m doctest'
 
 # Path variables
 export PATH=$PATH:$HOME/android-sdk-linux_x86/tools
