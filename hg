@@ -10,3 +10,4 @@ zeroconf=
 
 [alias]
 g = glog --style compact -l 10
+cm = commit -m
