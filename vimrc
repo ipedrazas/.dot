@@ -93,3 +93,9 @@ map <F5> :NERDTreeToggle<CR>
 "This is shit, slow and a problem because I'm always using Ctrl+C to go to
 "command mode
 "vmap <C-c> y: call system("xclip -i -selection clipboard", getreg("\""))<CR>
+
+" Vala
+autocmd BufRead *.vala set efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
+autocmd BufRead *.vapi set efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
+au BufRead,BufNewFile *.vala            setfiletype vala
+au BufRead,BufNewFile *.vapi            setfiletype vala
