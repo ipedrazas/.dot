@@ -11,3 +11,7 @@ zeroconf=
 [alias]
 g = glog --style compact -l 10
 cm = commit -m
+
+[pager]
+pager = LESS='FRQX' less
+attend = log, diff
