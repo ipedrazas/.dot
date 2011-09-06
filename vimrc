@@ -88,7 +88,7 @@ map <C-S-Down> <C-W>J
 map - <C-W><<C-W>-
 map + <C-W>><C-W>+
 
-map <F5> :NERDTreeToggle<CR>
+map <F3> :NERDTreeToggle<CR>
 
 "This is shit, slow and a problem because I'm always using Ctrl+C to go to
 "command mode
