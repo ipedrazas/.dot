@@ -12,11 +12,12 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 alias ssh-tunnel="ssh -p 2222 -L 1234:10.108.0.76:3306 -o ServerAliveInterval=60 head-1.paylogic.nl"
-alias pep8="pep8 --ignore=E501 --show-source"
+alias pep8='pep8 --ignore=E501 --show-source'
 alias ..='cd ..'
 alias ....='cd ....'
 alias pcat='pygmentize -O bg=dark'
 alias test='python -m doctest'
+alias maild="sudo python -c 'import smtpd, asyncore; smtpd.DebuggingServer((\"127.0.0.1\", 25), None); asyncore.loop()'"
 
 # Path variables
 export PATH=$PATH:$HOME/android-sdk-linux_x86/tools
