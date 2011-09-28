@@ -15,7 +15,7 @@ alias pep8='pep8 --ignore=E501 --show-source'
 alias ..='cd ..'
 alias ....='cd ....'
 alias pcat='pygmentize -O bg=dark'
-alias test='python -m doctest'
+alias doctest='python -m doctest'
 alias maild="sudo python -c 'import smtpd, asyncore; smtpd.DebuggingServer((\"127.0.0.1\", 25), None); asyncore.loop()'"
 
 # Path variables
