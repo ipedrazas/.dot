@@ -4,3 +4,4 @@
 
 [alias]
     cm = commit -m
+    st = status
