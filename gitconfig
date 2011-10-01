@@ -1,3 +1,6 @@
 [user]
 	email = agonzalezro@gmail.com
 	name = Álex González
+
+[alias]
+    cm = commit -m
