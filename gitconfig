@@ -3,5 +3,5 @@
 	name = Álex González
 
 [alias]
-    cm = commit -m
+    cm = commit -am
     st = status
