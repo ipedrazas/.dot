@@ -47,10 +47,12 @@ if ( !hasmapto('<SID>PEP8()') && (maparg(g:pep8_map) == '') )
   exe 'nnoremap <silent> '. g:pep8_map .' :call <SID>Pep8()<CR>'
 "  map <F5> :call <SID>Pep8()<CR>
 "  map! <F5> :call <SID>Pep8()<CR>
-else
-  if ( !has("gui_running") || has("win32") )
-    echo "Python PEP8 Error: No Key mapped.\n".
-          \ g:pep8_map ." is taken and a replacement was not assigned."
-  endif
 endif
 
+" don't show this error
+" else
+"  if ( !has("gui_running") || has("win32") )
+"    echo "Python PEP8 Error: No Key mapped.\n".
+"          \ g:pep8_map ." is taken and a replacement was not assigned."
+"  endif
+"endif
