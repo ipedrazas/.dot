@@ -5,3 +5,4 @@
 [alias]
     cm = commit -am
     st = status
+    co = checkout
