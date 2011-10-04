@@ -12,6 +12,7 @@ children=
 [alias]
 g = glog --style compact -l 10
 cm = commit -m
+nopep = !$HG commit -m "$1" --config hooks.pretxncommit.pep8=
 
 [pager]
 pager = LESS='FRQX' less

@@ -1,8 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='/home/alex/landslide/src/landslide/themes/light'
 let g:netrw_dirhist_2='/home/alex/gplus-blog/gplusblog/frontend'
 let g:netrw_dirhist_3='/home/alex/eelogic/eelogic/paylogic'
 let g:netrw_dirhist_4='/home/alex/eelogic/docs'
 let g:netrw_dirhist_5='/home/alex/eelogic/eelogic/id3'
 let g:netrw_dirhist_6='/home/alex/eelogic/eelogic/auth/tests'
+let g:netrw_dirhist_7='/home/alex/.gimp-2.6/gradients'
