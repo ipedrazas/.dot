@@ -16,3 +16,10 @@ cm = commit -m
 [pager]
 pager = LESS='FRQX' less
 attend = log, diff
+
+[hooks]
+pretxncommit.pep8 = python:hghooks.code.pep8hook
+pretxncommit.pdb = python:hghooks.code.pdbhook
+
+[pep8]
+ignore = E501

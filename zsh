@@ -12,6 +12,7 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 alias pep8='pep8 --ignore=E501 --show-source'
+alias check-pep8="find . -name '*.py*' -exec pep8 --ignore=E501 {} \;"
 alias ..='cd ..'
 alias ....='cd ....'
 alias pcat='pygmentize -O bg=dark'
