@@ -76,18 +76,15 @@ map <C-Right> <C-W><Right>
 map <C-Up> <C-W><Up>
 map <C-Down> <C-W><Down>
 
-map <A-Left> :tabp<CR>
-map <A-Right> :tabn<CR>
-
 map <C-S-Left> <C-W>H
 map <C-S-Right> <C-W>L
 map <C-S-Up> <C-W>K
 map <C-S-Down> <C-W>J
 
-"map - <C-W>-
-"map + <C-W>+
-map - <C-W><<C-W>-
-map + <C-W>><C-W>+
+map <A-Up> <C-W>+
+map <A-Down> <C-W>-
+map <A-Left> <C-W><
+map <A-Right> <C-W>>
 
 map <F3> :NERDTreeToggle<CR>
 
