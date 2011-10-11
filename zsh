@@ -19,7 +19,7 @@ alias pcat='pygmentize -O bg=dark'
 alias doctest='python -m doctest'
 alias maild="sudo python -c 'import smtpd, asyncore; smtpd.DebuggingServer((\"127.0.0.1\", 25), None); asyncore.loop()'"
 alias ff='find . -iname'
-alias debug='cat > /tmp/debug.html&&w3m /tmp/debug.html&&rm -rf /tmp/debug.html'
+alias debug='cat > /tmp/debug.html&&w3m /tmp/debug.html'
 
 # Path variables
 export PATH=$PATH:$HOME/android-sdk-linux_x86/tools
