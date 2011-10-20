@@ -22,7 +22,7 @@ alias ff='find . -iname'
 alias debug='cat > /tmp/debug.html&&w3m /tmp/debug.html'
 
 # Path variables
-export PATH=$PATH:$HOME/android-sdk-linux_x86/tools
+export PATH=$PATH:$HOME/android-sdk-linux/tools
 export EL="/home/alex/eelogic"
 export PL="/home/alex/paylogic"
 export FO="$PL/paylogic/frontoffice"

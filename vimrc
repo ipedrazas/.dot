@@ -27,6 +27,7 @@ set expandtab
 au BufWinEnter * set autoindent|set ts=4|set sw=4
 au BufWinEnter *.css set autoindent!
 au BufWinEnter *.html set autoindent!|set ts=2|set sw=2
+au BufWinEnter *.js set autoindent|set ts=2|set sw=2
 
 set number
 set hlsearch
