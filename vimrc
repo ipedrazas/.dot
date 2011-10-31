@@ -81,8 +81,8 @@ map <C-S-Right> <C-W>L
 map <C-S-Up> <C-W>K
 map <C-S-Down> <C-W>J
 
-map <A-Up> <C-W>+
-map <A-Down> <C-W>-
+map <A-Up> <C-W>-
+map <A-Down> <C-W>+
 map <A-Left> <C-W><
 map <A-Right> <C-W>>
 
