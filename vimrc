@@ -94,6 +94,7 @@ let g:notes_directory = '~/Documents/notes'
 let g:notes_indexfile = '~/Documents/notes/index/db.sqlite3'
 let g:notes_tagsindex = '~/Documents/notes/index/tags'
 map <F3> :SearchNotes tags<Left><Del><Del><Del><Del>
+set nofen
 
 "This is shit, slow and a problem because I'm always using Ctrl+C to go to
 "command mode
