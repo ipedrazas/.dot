@@ -91,8 +91,8 @@ map <F9> :NERDTreeToggle<CR>
 
 " Notes plugin
 let g:notes_directory = '~/Documents/notes'
-let g:notes_indexfile = '~/Documents/notes/index.sqlite3'
-let g:notes_tagsindex = '~/Documents/notes/tags.txt'
+let g:notes_indexfile = '~/Documents/notes/index/db.sqlite3'
+let g:notes_tagsindex = '~/Documents/notes/index/tags'
 map <F3> :SearchNotes tags<Left><Del><Del><Del><Del>
 
 "This is shit, slow and a problem because I'm always using Ctrl+C to go to
