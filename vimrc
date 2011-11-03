@@ -87,7 +87,8 @@ map <A-Down> <C-W>-
 map <A-Left> <C-W><
 map <A-Right> <C-W>>
 
-map <F3> :NERDTreeToggle<CR>
+map <F2> :NERDTreeToggle<CR>
+map <F3> :SearchNotes tags<Left><Del><Del><Del><Del>
 
 "This is shit, slow and a problem because I'm always using Ctrl+C to go to
 "command mode
