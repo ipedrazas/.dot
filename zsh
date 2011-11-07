@@ -26,7 +26,7 @@ if [ -e $HOME/bin ]; then
     export PATH=$PATH:$HOME/bin
 fi
 if [ -e $HOME/android-sdk-linux ]; then
-    export PATH=$PATH:$HOME/android-sdk-linux_x86/tools
+    export PATH=$PATH:$HOME/android-sdk-linux/tools
 fi
 export EL="/home/alex/eelogic"
 export PL="/home/alex/paylogic"

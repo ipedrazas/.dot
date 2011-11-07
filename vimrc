@@ -27,6 +27,7 @@ set expandtab
 au BufWinEnter * set autoindent|set ts=4|set sw=4
 au BufWinEnter *.css set autoindent!
 au BufWinEnter *.html set autoindent!|set ts=2|set sw=2
+au BufWinEnter *.js set autoindent|set ts=2|set sw=2
 
 set number
 set hlsearch
@@ -86,7 +87,14 @@ map <A-Down> <C-W>+
 map <A-Left> <C-W><
 map <A-Right> <C-W>>
 
-map <F3> :NERDTreeToggle<CR>
+map <F9> :NERDTreeToggle<CR>
+
+" Notes plugin
+let g:notes_directory = '~/Documents/notes'
+let g:notes_indexfile = '~/Documents/notes/index/db.sqlite3'
+let g:notes_tagsindex = '~/Documents/notes/index/tags'
+map <F3> :SearchNotes tags<Left><Del><Del><Del><Del>
+set nofen
 
 "This is shit, slow and a problem because I'm always using Ctrl+C to go to
 "command mode
