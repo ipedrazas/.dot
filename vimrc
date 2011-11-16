@@ -91,9 +91,10 @@ map <F9> :NERDTreeToggle<CR>
 
 " Notes plugin
 let g:notes_directory = '~/Documents/notes'
-let g:notes_indexfile = '~/Documents/notes/index/db.sqlite3'
-let g:notes_tagsindex = '~/Documents/notes/index/tags'
+let g:notes_indexfile = '~/.vim-notes/db.sqlite3'
+let g:notes_tagsindex = '~/.vim-notes/tags'
 map <F3> :SearchNotes tags<Left><Del><Del><Del><Del>
+let g:notes_smart_quotes = 0
 set nofen
 
 "This is shit, slow and a problem because I'm always using Ctrl+C to go to

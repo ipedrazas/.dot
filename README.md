@@ -17,4 +17,5 @@ Add `%include ~/.dot/hg` at the end of your `~/.hgrc`.
 ## vim notes
 By default is configured to use ~/Documents/notes. You must create this path and a path called index inside:
 
-    mkdir $HOME/Documents/notes/index -p
+    mkdir $HOME/Documents/notes
+    mkdir $HOME/.vim-notes
