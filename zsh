@@ -37,7 +37,7 @@ export TW="$PL/paylogic/ticketware"
 export ELA="$PL/paylogic/eelogic"
 export LK="$HOME/lukkom"
 export BL="$HOME/gplus-blog"
-export ID="$HOME/id5"
+export ID5="$HOME/id5"
 
 export EDITOR="vim"
 
