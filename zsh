@@ -37,6 +37,7 @@ export TW="$PL/paylogic/ticketware"
 export ELA="$PL/paylogic/eelogic"
 export LK="$HOME/lukkom"
 export BL="$HOME/gplus-blog"
+export ID="$HOME/id5"
 
 export EDITOR="vim"
 
@@ -49,6 +50,7 @@ alias tw="workon paylogic;cd $TW"
 alias lk="workon lukkom;cd $LK"
 alias bl="workon gplus-blog;cd $BL"
 alias ela="workon paylogic;cd $ELA"
+alias idenv="workon id5;cd $ID5"
 
 alias manage="python manage.py"
 alias mgr="python manage.py runserver"
