@@ -4,6 +4,10 @@ set background=dark
 colors BusyBee
 highlight Normal ctermfg=LightGrey ctermbg=NONE
 
+set showcmd " show incomplete commands
+filetype plugin indent on " load file type plugins + indentation
+set backspace=indent,eol,start
+
 " Color for GUI
 if has('gui_running')
     colors symfony
@@ -26,12 +30,13 @@ hi ColorColumn ctermbg=black guibg=black ctermfg=NONE guifg=NONE
 set expandtab
 au BufWinEnter * set autoindent|set ts=4|set sw=4
 au BufWinEnter *.css set autoindent!
-au BufWinEnter *.html set autoindent!|set ts=2|set sw=2
-au BufWinEnter *.js set autoindent|set ts=2|set sw=2
+au BufWinEnter *.html,*.js set autoindent!|set ts=2|set sw=2
+"au BufWinEnter *.js set autoindent|set ts=2|set sw=2|set smartindent!
 
 set number
 set hlsearch
 set ignorecase
+set smartcase
 set incsearch
 set so=3
 
@@ -77,15 +82,11 @@ map <C-Right> <C-W><Right>
 map <C-Up> <C-W><Up>
 map <C-Down> <C-W><Down>
 
-map <C-S-Left> <C-W>H
-map <C-S-Right> <C-W>L
-map <C-S-Up> <C-W>K
-map <C-S-Down> <C-W>J
-
-map <A-Up> <C-W>-
-map <A-Down> <C-W>+
-map <A-Left> <C-W><
-map <A-Right> <C-W>>
+"move windows
+map <A-Up> <C-W>K
+map <A-Down> <C-W>J
+map <A-Left> <C-W>H
+map <A-Right> <C-W>L
 
 map <F9> :NERDTreeToggle<CR>
 
