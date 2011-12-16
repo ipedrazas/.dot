@@ -12,6 +12,7 @@
   toggle_zoom = <Control>m
   go_down = None
   go_right = None
+  new_tab = <Control>t
   go_up = None
 [profiles]
   [[default]]
