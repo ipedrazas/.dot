@@ -11,11 +11,11 @@
 [keybindings]
   toggle_zoom = <Control>m
   go_up = None
-  go_prev = <Shift><Control>Page_Up
+  go_prev = None
   go_down = None
   split_vert = <Shift><Control>p
   go_right = None
-  go_next = <Shift><Control>Page_Down
+  go_next = None
   new_tab = <Control>t
 [profiles]
   [[default]]
