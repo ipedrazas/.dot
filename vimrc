@@ -73,6 +73,7 @@ function! TabWrapperRope()
   endif
 endfunction
 
+
 set statusline=%<%F%h%m%r%h%w\ %y\ %{&ff}\ %{strftime(\"%d/%m/%Y\ -\ %H:%M\")}%=\ col:%c%V\ lin:%l\ %P
 set laststatus=2
 

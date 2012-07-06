@@ -8,6 +8,7 @@ hgpaylogic=~/hgpaylogic
 schemes=
 zeroconf=
 children=
+bookcommit=
 
 [alias]
 g = glog --style compact -l 10

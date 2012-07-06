@@ -1,11 +1,3 @@
-# Prompt
-#zefram suse oliver adam1
-#prompt adam1 transparent transparent white
-prompt oliver
-
-# Completion
-zstyle ':completion:*' completer _expand _complete _correct _approximate
-
 # Aliases
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
@@ -39,6 +31,7 @@ export LK="$HOME/lukkom"
 export BL="$HOME/gplus-blog"
 export ID5="$HOME/id5"
 
+# Pl editor
 export EDITOR="vim"
 
 # Shortcuts
@@ -55,9 +48,16 @@ alias idenv="workon id5;cd $ID5"
 alias manage="python manage.py"
 alias mgr="python manage.py runserver"
 alias mgs="python manage.py shell"
-alias mgd="python manage.py dbshell"
+alias mgd="python manage.py dbshell"\
+alias unquote="python -c 'import sys, urllib; print urllib.unquote_plus(sys.argv[1])'"
 
 # Virtualenvwrapper
 export PIP_RESPECT_VIRTUALENV=true
 export WORKON_HOME=~/.virtualenvs
 . /usr/local/bin/virtualenvwrapper.sh
+
+# oh-my-zsh confs
+ZSH=$HOME/.oh-my-zsh
+ZSH_THEME="sunrise"
+plugins=(git mercurial vi-mode virtualenvwrapper svn python github)
+source $ZSH/oh-my-zsh.sh
