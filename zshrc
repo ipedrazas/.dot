@@ -51,11 +51,6 @@ alias mgs="python manage.py shell"
 alias mgd="python manage.py dbshell"\
 alias unquote="python -c 'import sys, urllib; print urllib.unquote_plus(sys.argv[1])'"
 
-# Virtualenvwrapper
-export PIP_RESPECT_VIRTUALENV=true
-export WORKON_HOME=~/.virtualenvs
-. /usr/local/bin/virtualenvwrapper.sh
-
 # oh-my-zsh confs
 # This is the project page: https://github.com/robbyrussell/oh-my-zsh/
 ZSH=$HOME/.oh-my-zsh
