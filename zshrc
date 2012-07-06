@@ -57,6 +57,7 @@ export WORKON_HOME=~/.virtualenvs
 . /usr/local/bin/virtualenvwrapper.sh
 
 # oh-my-zsh confs
+# This is the project page: https://github.com/robbyrussell/oh-my-zsh/
 ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="sunrise"
 plugins=(git mercurial vi-mode virtualenvwrapper svn python github)
