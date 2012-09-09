@@ -8,6 +8,14 @@ if [ "`pip freeze|grep ropevim|wc -l`" -eq "0" ]; then
     sudo pip install ropevim
 fi
 
+if [ "`pip freeze|grep flake8|wc -l`" -eq "0" ]; then
+    sudo pip install flake8
+fi
+
+if [ "`pip freeze|grep pyflakes|wc -l`" -eq "0" ]; then
+    sudo pip install pyflakes
+fi
+
 if [ "`egrep '^%include.*hg$' ~/.hgrc|wc -l`" -eq "0" ]; then
     echo "%include $PWD/hg" >> ~/.hgrc
 fi
