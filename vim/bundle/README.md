@@ -4,6 +4,7 @@ nerdtree
 pyflakes-vim
 rope-vim
 snipmate-snippets
+supertab
 
 Dependencies
 ============
