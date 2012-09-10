@@ -25,3 +25,7 @@ ln -sf $PWD/vim ~/.vim
 ln -sf $PWD/zshrc ~/.zshrc
 ln -sf $PWD/terminator ~/.config
 ln -sf $PWD/gitconfig ~/.gitconfig
+
+# Bundles installation
+git submodule init
+git submodule update
