@@ -54,7 +54,7 @@ alias unquote="python -c 'import sys, urllib; print urllib.unquote_plus(sys.argv
 # oh-my-zsh confs
 # This is the project page: https://github.com/robbyrussell/oh-my-zsh/
 ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="sunrise"
+ZSH_THEME="random"
 plugins=(git mercurial virtualenvwrapper svn python github)
 source $ZSH/oh-my-zsh.sh
 
