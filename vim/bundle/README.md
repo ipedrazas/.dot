@@ -5,6 +5,7 @@ Installed
 - rope-vim
 - snipmate-snippets
 - supertab
+- ctrlp
 
 Dependencies
 ============
