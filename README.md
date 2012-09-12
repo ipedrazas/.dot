@@ -4,11 +4,15 @@ The file on this repository are the important configurations that I'm using
 all the day and I don't want to lost. Feel free of use them and provide me
 any trick if you think that it could make me life easier.
 
+*If you are going to clone this repo, please, do it with the `--recursive`
+option.*
+
 
 Install all
 -----------
 You can install all the configurations at one time using:
 
+    git clone --recursive https://github.com/agonzalezro/.dot.git
     ./install.sh
 
 It's the recommended way if you know what are you doing :)
