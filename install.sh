@@ -29,3 +29,8 @@ ln -sf $PWD/gitconfig ~/.gitconfig
 # Bundles installation
 git submodule init
 git submodule update
+pushd
+cd $PWD/vim/bundle/pyflakes-vim
+git submodule init
+git submodule update
+popd
