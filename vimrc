@@ -98,3 +98,8 @@ map <Insert> :set paste<CR>i<CR><CR><Esc>k:.!xclip -o<CR>JxkJx:set nopaste<CR>
 " flake8
 autocmd FileType python map <buffer> <F5> :call Flake8()<CR>
 let g:flake8_max_line_length=120
+
+" ================ Turn Off Swap Files ==============
+set noswapfile
+set nobackup
+set nowb

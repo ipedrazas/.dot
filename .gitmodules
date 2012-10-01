@@ -12,7 +12,7 @@
 	url = https://github.com/klen/rope-vim.git
 [submodule "snipmate-snippets"]
     path = vim/bundle/snipmate-snippets
-	url = https://github.com/agonzalezro/snipmate-snippets
+	url = https://github.com/honza/snipmate-snippets
 [submodule "supertab"]
     path = vim/bundle/supertab
 	url = https://github.com/ervandew/supertab
