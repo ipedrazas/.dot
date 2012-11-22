@@ -12,7 +12,7 @@ set backspace=indent,eol,start
 
 " Color for GUI
 if has('gui_running')
-    colors symfony
+    colors wombat
     set guioptions-=m  "remove menu bar
     set guioptions-=T  "remove toolbar
     set showtabline=2
@@ -87,6 +87,8 @@ map <A-Down> <C-W>J
 map <A-Left> <C-W>H
 map <A-Right> <C-W>L
 
+map <C-a> :resize 9999\|vertical resize 9999<CR>
+
 "NERDTree
 autocmd vimenter * if !argc() | NERDTree | endif
 map <F9> :NERDTreeToggle<CR>
@@ -103,3 +105,6 @@ let g:flake8_max_line_length=120
 set noswapfile
 set nobackup
 set nowb
+
+" Avoid problem with robot framework tags
+set tags=/dev/null

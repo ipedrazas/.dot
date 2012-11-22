@@ -4,16 +4,22 @@ if [ ! -d ~/.oh-my-zsh ]; then
     git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 fi
 
-if [ "`pip freeze|grep ropevim|wc -l`" -eq "0" ]; then
+pip freeze > /tmp/pip_freeze
+
+if [ "`cat /tmp/pip_freeze|grep ropevim|wc -l`" -eq "0" ]; then
     sudo pip install ropevim
 fi
 
-if [ "`pip freeze|grep flake8|wc -l`" -eq "0" ]; then
+if [ "`cat /tmp/pip_freeze|grep flake8|wc -l`" -eq "0" ]; then
     sudo pip install flake8
 fi
 
-if [ "`pip freeze|grep pyflakes|wc -l`" -eq "0" ]; then
+if [ "`cat /tmp/pip_freeze|grep pyflakes|wc -l`" -eq "0" ]; then
     sudo pip install pyflakes
+fi
+
+if [ "`cat /tmp/pip_freeze|grep hghooks|wc -l`" -eq "0" ]; then
+    sudo pip install hghooks
 fi
 
 if [ "`egrep '^%include.*hg$' ~/.hgrc|wc -l`" -eq "0" ]; then
@@ -34,3 +40,5 @@ cd $PWD/vim/bundle/pyflakes-vim
 git submodule init
 git submodule update
 popd
+
+rm /tmp/pip_freeze

@@ -9,6 +9,7 @@ zeroconf=
 children=
 bookcommit=
 purge=
+convert=
 
 [alias]
 g = glog --style compact -l 10
