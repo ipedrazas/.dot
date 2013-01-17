@@ -6,6 +6,9 @@ Installed
 - snipmate-snippets
 - supertab
 - ctrlp
+- Yddgroot
+- vim-python-pep8-indent
+
 
 Dependencies
 ============

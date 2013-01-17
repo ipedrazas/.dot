@@ -37,3 +37,6 @@
 [submodule "vim/bundle/colorschemes"]
 	path = vim/bundle/colorschemes
 	url = git@github.com:flazz/vim-colorschemes.git
+[submodule "vim/bundle/Yggdroot"]
+	path = vim/bundle/Yggdroot
+	url = https://github.com/Yggdroot/indentLine.git

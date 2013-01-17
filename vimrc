@@ -28,7 +28,7 @@ au BufWinEnter *.py set colorcolumn=80
 au BufWinEnter *.py set wrap!
 au BufWinEnter *.py let w:m1=matchadd('ErrorMsg', '\%>120v.\+', -1)
 " more than 80c will be red colored
-autocmd ColorScheme * hi ErrorMsg ctermbg=NONE ctermfg=red
+" autocmd ColorScheme * hi ErrorMsg ctermbg=NONE ctermfg=red
 " Color for the 80 char column
 autocmd ColorScheme * hi ColorColumn ctermbg=Black guibg=Black ctermfg=NONE guifg=NONE
 
@@ -99,6 +99,7 @@ map <C-a> :resize 9999\|vertical resize 9999<CR>
 
 "NERDTree
 autocmd vimenter * if !argc() | NERDTree | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 map <F9> :NERDTreeToggle<CR>
 
 "Copy-paste normal way
