@@ -2,7 +2,7 @@ call pathogen#infect()
 
 let &t_Co=256
 set background=dark
-colors BusyBee
+colors jellybeans
 highlight Normal ctermfg=LightGrey ctermbg=NONE
 
 set showcmd " show incomplete commands
@@ -12,13 +12,11 @@ set backspace=indent,eol,start
 
 " Color for GUI
 if has('gui_running')
-    colors wombat
     set guioptions-=m  "remove menu bar
     set guioptions-=T  "remove toolbar
     set showtabline=2
-    set guifont=DejaVu\ Sans\ Mono\ 9
-    " default path
-    cd /home/alex/paylogic
+    set transparency=3
+    highlight Normal ctermfg=LightGrey ctermbg=NONE
 endif
 
 " eyecandy
@@ -75,17 +73,26 @@ function! TabWrapperRope()
   endif
 endfunction
 
-" move between windows
 map <C-Left> <C-W><Left>
 map <C-Right> <C-W><Right>
 map <C-Up> <C-W><Up>
 map <C-Down> <C-W><Down>
+" macvim version
+map <C-D-Left> <C-W><Left>
+map <C-D-Right> <C-W><Right>
+map <C-D-Up> <C-W><Up>
+map <C-D-Down> <C-W><Down>
 
-"move windows
+ "move windows
 map <A-Up> <C-W>K
 map <A-Down> <C-W>J
 map <A-Left> <C-W>H
 map <A-Right> <C-W>L
+" macvim version
+map <A-D-Up> <C-W>K
+map <A-D-Down> <C-W>J
+map <A-D-Left> <C-W>H
+map <A-D-Right> <C-W>L
 
 map <C-a> :resize 9999\|vertical resize 9999<CR>
 
@@ -99,7 +106,7 @@ map <Insert> :set paste<CR>i<CR><CR><Esc>k:.!xclip -o<CR>JxkJx:set nopaste<CR>
 
 " flake8
 autocmd FileType python map <buffer> <F5> :call Flake8()<CR>
-let g:flake8_max_line_length=120
+let g:flake8_max_line_length=80
 
 " ================ Turn Off Swap Files ==============
 set noswapfile

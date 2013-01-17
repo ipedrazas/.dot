@@ -6,3 +6,8 @@
     cm = commit -am
     st = status
     co = checkout
+    amend = commit --amend
+[core]
+	editor = /usr/bin/vim
+[push]
+	default = simple
