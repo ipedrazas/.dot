@@ -24,12 +24,13 @@ set statusline=%<%F%h%m%r%h%w\ %y\ %{&ff}\ %{strftime(\"%d/%m/%Y\ -\ %H:%M\")}%=
 set laststatus=2
 
 " 80c & 120c limit, after that, red alert! :)
-au BufWinEnter *.py set colorcolumn=80,120
+au BufWinEnter *.py set colorcolumn=80
 au BufWinEnter *.py set wrap!
 au BufWinEnter *.py let w:m1=matchadd('ErrorMsg', '\%>120v.\+', -1)
 " more than 80c will be red colored
-hi ErrorMsg ctermbg=NONE ctermfg=red
-hi ColorColumn ctermbg=black guibg=black ctermfg=NONE guifg=NONE
+autocmd ColorScheme * hi ErrorMsg ctermbg=NONE ctermfg=red
+" Color for the 80 char column
+autocmd ColorScheme * hi ColorColumn ctermbg=Black guibg=Black ctermfg=NONE guifg=NONE
 
 set expandtab
 au BufWinEnter * set autoindent|set ts=4|set sw=4
