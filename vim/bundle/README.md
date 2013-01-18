@@ -6,7 +6,7 @@ Installed
 - snipmate-snippets
 - supertab
 - ctrlp
-- Yddgroot
+- Yddgroot: show indentation lines
 - vim-python-pep8-indent
 
 
