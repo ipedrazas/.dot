@@ -9,5 +9,3 @@
     amend = commit --amend
 [core]
 	editor = /usr/bin/vim
-[push]
-	default = simple
