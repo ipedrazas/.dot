@@ -8,7 +8,7 @@ Installed
 - ctrlp
 - Yddgroot: show indentation lines
 - vim-python-pep8-indent
-
+- python-mode
 
 Dependencies
 ============

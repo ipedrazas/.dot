@@ -26,7 +26,7 @@ set laststatus=2
 " 80c & 120c limit, after that, red alert! :)
 au BufWinEnter *.py set colorcolumn=80
 au BufWinEnter *.py set wrap!
-au BufWinEnter *.py let w:m1=matchadd('ErrorMsg', '\%>120v.\+', -1)
+au BufWinEnter *.py let w:m1=matchadd('ErrorMsg', '\%>80v.\+', -1)
 " more than 80c will be red colored
 " autocmd ColorScheme * hi ErrorMsg ctermbg=NONE ctermfg=red
 " Color for the 80 char column
@@ -59,41 +59,37 @@ au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|
 " Remove extra spaces at the end of the line
 autocmd BufWritePre * :%s/\s\+$//e
 
-" Rope
-map <C-f> :lv "" **/*py<C-Left><Left><Left>
-map <C-]> :call RopeGotoDefinition()<cr>
-
-let ropevim_vim_completion=1
-let ropevim_extended_complete=1
-let ropevim_enable_shortcuts=1
-function! TabWrapperRope()
-  if strpart(getline('.'), 0, col('.')-1) =~ '^\s*$'
-    return "\<Tab>"
-  else
-    return "\<C-R>=RopeCodeAssistInsertMode()\<CR>"
-  endif
-endfunction
-
+" move between splits
 map <C-Left> <C-W><Left>
-map <C-Right> <C-W><Right>
-map <C-Up> <C-W><Up>
 map <C-Down> <C-W><Down>
+map <C-Up> <C-W><Up>
+map <C-Right> <C-W><Right>
 " macvim version
 map <C-D-Left> <C-W><Left>
-map <C-D-Right> <C-W><Right>
-map <C-D-Up> <C-W><Up>
 map <C-D-Down> <C-W><Down>
+map <C-D-Up> <C-W><Up>
+map <C-D-Right> <C-W><Right>
+" vim version
+map <C-h> <C-W><Left>
+map <C-j> <C-W><Down>
+map <C-k> <C-W><Up>
+map <C-l> <C-W><Right>
 
- "move windows
-map <A-Up> <C-W>K
-map <A-Down> <C-W>J
+"move splits
 map <A-Left> <C-W>H
+map <A-Down> <C-W>J
+map <A-Up> <C-W>K
 map <A-Right> <C-W>L
 " macvim version
-map <A-D-Up> <C-W>K
-map <A-D-Down> <C-W>J
 map <A-D-Left> <C-W>H
+map <A-D-Down> <C-W>J
+map <A-D-Up> <C-W>K
 map <A-D-Right> <C-W>L
+" vim version
+map <A-h> <C-W>H
+map <A-j> <C-W>J
+map <A-k> <C-W>K
+map <A-l> <C-W>L
 
 map <C-a> :resize 9999\|vertical resize 9999<CR>
 
@@ -102,18 +98,62 @@ autocmd vimenter * if !argc() | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 map <F9> :NERDTreeToggle<CR>
 
-"Copy-paste normal way
-vmap <C-c> :<Esc>`>a<CR><Esc>mx`<i<CR><Esc>my'xk$v'y!xclip -selection c<CR>u
-map <Insert> :set paste<CR>i<CR><CR><Esc>k:.!xclip -o<CR>JxkJx:set nopaste<CR>
-
 " flake8
 autocmd FileType python map <buffer> <F5> :call Flake8()<CR>
 let g:flake8_max_line_length=80
 
-" ================ Turn Off Swap Files ==============
+" Turn off swap files
 set noswapfile
 set nobackup
 set nowb
 
 " Avoid problem with robot framework tags
 set tags=/dev/null
+
+" Move codeblocks
+vnoremap < <gv
+vnoremap > >gv
+
+" Better copy&paste
+set clipboard=unnamed
+
+" Autoreload
+autocmd! bufwritepost .vimrc source %
+
+" Rope
+map <Leader>g :call RopeGotoDefinition()<CR>
+let ropevim_enable_shortcuts = 1
+let g:pymode_rope_goto_def_newwin = "vnew"
+let g:pymode_rope_extended_complete = 1
+let g:pymode_breakpoint = 0
+let g:pymode_syntax = 1
+let g:pymode_syntax_builtin_objs = 0
+let g:pymode_syntax_builtin_funcs = 0
+map <Leader>b Oimport ipdb; ipdb.set_trace()<C-c>
+let g:pymode_virtualenv = 1
+
+" Better navigating through omnicomplete option list
+" http://stackoverflow.com/questions/2170023/how-to-map-keys-for-popup-menu-in-vim
+set completeopt=longest,menuone
+function! OmniPopup(action)
+    if pumvisible()
+        if a:action == 'j'
+            return "\<C-N>"
+        elseif a:action == 'k'
+            return "\<C-P>"
+        endif
+    endif
+    return a:action
+endfunction
+
+inoremap <silent><C-j> <C-R>=OmniPopup('j')<CR>
+inoremap <silent><C-k> <C-R>=OmniPopup('k')<CR>
+
+"Python folding
+set nofoldenable
+
+" Don't use pylint each save
+let g:pymode_lint_write = 0
+
+" Sort selected text
+vnoremap <Leader>s :sort<CR>
