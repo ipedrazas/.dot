@@ -8,6 +8,6 @@
     co = checkout
     amend = commit --amend
 [core]
-	editor = /usr/bin/vim
+	editor = mvim -f -c \"set columns=80|set lines=50\"
 [push]
 	default = matching

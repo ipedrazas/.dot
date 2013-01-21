@@ -30,5 +30,8 @@ map <A-j> <C-W>J
 map <A-k> <C-W>K
 map <A-l> <C-W>L
 
-map <C-a> :resize 9999\|vertical resize 9999<CR>
+" move between tabs
+map <S-h> :tabn<CR>
+map <S-l> :tabp<CR>
 
+map <C-a> :resize 9999\|vertical resize 9999<CR>

@@ -33,3 +33,6 @@ map <F9> :NERDTreeToggle<CR>
 " no idea lol
 set viminfo='10,\"100,:20,%,n~/.viminfo
 au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
+
+" ctrlp ignores
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc
