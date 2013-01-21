@@ -40,3 +40,6 @@
 [submodule "vim/bundle/Yggdroot"]
 	path = vim/bundle/Yggdroot
 	url = https://github.com/Yggdroot/indentLine.git
+[submodule "vim/bundle/scala-vim-support"]
+	path = vim/bundle/scala-vim-support
+	url = https://github.com/rosstimson/scala-vim-support.git
