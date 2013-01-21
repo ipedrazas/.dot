@@ -1,5 +1,4 @@
 [global_config]
-  window_state = hidden
   handle_size = 0
   enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
   focus = mouse
