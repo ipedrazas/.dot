@@ -23,6 +23,7 @@ set clipboard=unnamed
 
 " Autoreload
 autocmd! bufwritepost .vimrc source %
+autocmd! bufwritepost ~/.vim/rcs/* source %
 
 "NERDTree
 autocmd vimenter * if !argc() | NERDTree | endif
