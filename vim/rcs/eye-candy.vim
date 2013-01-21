@@ -14,7 +14,7 @@ if has('gui_running')
     set guioptions-=T  "remove toolbar
     set showtabline=2
     set transparency=3
-    highlight Normal ctermfg=LightGrey ctermbg=NONE
+    "highlight Normal ctermfg=LightGrey ctermbg=NONE
 endif
 
 " eyecandy
