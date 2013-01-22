@@ -38,4 +38,14 @@ map <A-l> <C-W>L
 map <S-h> :tabn<CR>
 map <S-l> :tabp<CR>
 
+" new behaviour
+map h <C-W><Left>
+map j <C-W><Down>
+map k <C-W><Up>
+map l <C-W><Right>
+map <C-h> <C-W>H
+map <C-j> <C-W>J
+map <C-k> <C-W>K
+map <C-l> <C-W>L
+
 map <C-a> :resize 9999\|vertical resize 9999<CR>
