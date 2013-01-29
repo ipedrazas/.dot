@@ -48,4 +48,4 @@ map <C-j> <C-W>J
 map <C-k> <C-W>K
 map <C-l> <C-W>L
 
-map <C-a> :resize 9999\|vertical resize 9999<CR>
+map <C-a> <C-W>_<C-W>\|
