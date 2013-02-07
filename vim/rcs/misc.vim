@@ -29,6 +29,7 @@ autocmd! bufwritepost ~/.vim/rcs/* source %
 autocmd vimenter * if !argc() | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 map <F9> :NERDTreeToggle<CR>
+let NERDTreeShowBookmarks=1
 
 " no idea lol
 set viminfo='10,\"100,:20,%,n~/.viminfo
