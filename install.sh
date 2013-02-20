@@ -31,6 +31,7 @@ ln -sf $PWD/vim ~/.vim
 ln -sf $PWD/zshrc ~/.zshrc
 ln -sf $PWD/terminator ~/.config
 ln -sf $PWD/gitconfig ~/.gitconfig
+ln -sf $PWD/pdbrc ~/.pdbrc
 
 # Bundles installation
 git submodule init

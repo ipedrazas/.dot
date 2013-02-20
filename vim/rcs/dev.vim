@@ -7,6 +7,7 @@ set expandtab
 au BufWinEnter * set autoindent|set ts=4|set sw=4
 au BufWinEnter *.html,*.js,*.css,*.scss set ts=2|set sw=2
 au BufWinEnter *.scss set filetype=css
+au BufWinEnter *.thrift set filetype=thrift
 
 " Sort selected text
 vnoremap <Leader>s :sort<CR>
