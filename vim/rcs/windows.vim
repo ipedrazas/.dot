@@ -35,8 +35,8 @@ map <A-k> <C-W>K
 map <A-l> <C-W>L
 
 " move between tabs
-map <S-h> :tabn<CR>
-map <S-l> :tabp<CR>
+map <S-l> :tabn<CR>
+map <S-h> :tabp<CR>
 
 " new behaviour
 map h <C-W><Left>
