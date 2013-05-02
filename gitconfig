@@ -9,5 +9,6 @@
     amend = commit --amend
 [core]
 	editor = mvim -f
+	excludesfile = /Users/alexgo/.gitignore_global
 [push]
 	default = matching

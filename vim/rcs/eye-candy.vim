@@ -12,6 +12,8 @@ set backspace=indent,eol,start
 if has('gui_running')
     set guioptions-=m  "remove menu bar
     set guioptions-=T  "remove toolbar
+    set guioptions-=r  "remove right scrollbar
+    set guioptions-=L  "remove left scrollbar
     set showtabline=2
     set transparency=3
     "highlight Normal ctermfg=LightGrey ctermbg=NONE

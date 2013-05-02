@@ -33,7 +33,7 @@ ln -sf $PWD/terminator ~/.config
 ln -sf $PWD/gitconfig ~/.gitconfig
 ln -sf $PWD/pdbrc ~/.pdbrc
 
-# Bundles installation
+# Bundles installation (if you didn't used --recursive on clone)
 git submodule init
 git submodule update
 pushd
