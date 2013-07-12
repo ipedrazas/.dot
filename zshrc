@@ -4,6 +4,7 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 alias pep8='pep8 --show-source'
+alias pepocho='pep8'
 alias check-pep8="find . -name '*.py*' -exec pep8 --ignore=E501 {} \;"
 alias ..='cd ..'
 alias ....='cd ....'
