@@ -28,6 +28,7 @@ alias manage="python manage.py"
 alias mgr="python manage.py runserver"
 alias mgs="python manage.py shell"
 alias mgd="python manage.py dbshell"\
+alias tree="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/   /' -e 's/-/|/'"
 alias unquote="python -c 'import sys, urllib; print urllib.unquote_plus(sys.argv[1])'"
 
 # oh-my-zsh confs
@@ -51,3 +52,8 @@ import() { expect -c "spawn -noecho python
 expect \">>> \"
 send \"import $*\r\"
 interact +++ return"; }
+
+# No autocompletion
+alias git="nocorrect git"
+alias sbt="nocorrect sbt"
+alias play="nocorrect play"

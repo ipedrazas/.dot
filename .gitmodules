@@ -10,9 +10,6 @@
 [submodule "rope-vim"]
     path = vim/bundle/rope-vim
 	url = https://github.com/klen/rope-vim.git
-[submodule "snipmate-snippets"]
-    path = vim/bundle/snipmate-snippets
-	url = https://github.com/honza/snipmate-snippets
 [submodule "supertab"]
     path = vim/bundle/supertab
 	url = https://github.com/ervandew/supertab
@@ -73,3 +70,12 @@
 [submodule "vim/bundle/HTML-AutoCloseTag"]
 	path = vim/bundle/HTML-AutoCloseTag
 	url = https://github.com/vim-scripts/HTML-AutoCloseTag.git
+[submodule "vim/bundle/jedi-vim"]
+	path = vim/bundle/jedi-vim
+	url = https://github.com/davidhalter/jedi-vim.git
+[submodule "vim/bundle/vim-gitgutter"]
+	path = vim/bundle/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git
+[submodule "vim/bundle/vim-snippets"]
+	path = vim/bundle/vim-snippets
+	url = https://github.com/honza/vim-snippets.git

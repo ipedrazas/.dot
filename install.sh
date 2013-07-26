@@ -33,13 +33,6 @@ ln -sf $PWD/terminator ~/.config
 ln -sf $PWD/gitconfig ~/.gitconfig
 ln -sf $PWD/pdbrc ~/.pdbrc
 
-# Bundles installation (if you didn't used --recursive on clone)
-git submodule init
-git submodule update
-pushd
-cd $PWD/vim/bundle/pyflakes-vim
-git submodule init
-git submodule update
-popd
+git submodule update --init --recursive
 
 rm /tmp/pip_freeze
