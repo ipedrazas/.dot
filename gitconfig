@@ -8,7 +8,10 @@
     co = checkout
     amend = commit --amend
 [core]
-	editor = mvim -f
-	excludesfile = /Users/alexgo/.gitignore_global
+    excludesfile = /Users/alexgo/.gitignore_global
 [push]
-	default = matching
+    default = matching
+[color]
+    diff = auto
+    status = auto
+    branch = auto

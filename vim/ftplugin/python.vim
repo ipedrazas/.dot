@@ -1,3 +1,15 @@
+" more than 80c will be red colored
+" autocmd ColorScheme * hi ErrorMsg ctermbg=NONE ctermfg=red
+" Color for the 80 char column
+" autocmd ColorScheme * hi ColorColumn ctermbg=Black guibg=Black ctermfg=NONE guifg=NONE
+
+set expandtab
+au BufWinEnter * set autoindent|set ts=4|set sw=4
+
+" flake8
+autocmd FileType python map <buffer> <F5> :call Flake8()<CR>
+let g:flake8_max_line_length=80
+
 map <Leader>g :call RopeGotoDefinition()<CR>
 let ropevim_enable_shortcuts = 1
 let g:pymode_rope_goto_def_newwin = "vnew"
@@ -122,3 +134,6 @@ function! ReFold()
     echo
 endfunction
 
+" Do not autocomplete after ".", use C-Space instead
+let g:jedi#popup_on_dot = 0
+let g:jedi#use_tabs_not_buffers = 1

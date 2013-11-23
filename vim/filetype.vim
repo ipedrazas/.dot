@@ -4,15 +4,18 @@
 if exists("did_load_filetypes")
     finish
 endif
+
 augroup filetypedetect
     au! BufRead,BufNewFile *.pde  setfiletype arduino
+
+    autocmd BufRead *.{vala,vapi} set efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
+    au BufRead,BufNewFile *.{vala,vapi} setfiletype vala
+
+    au BufRead,BufNewFile *.{md,mdown,mkd,mkdn,markdown,mdwn} setfiletype mkd
+
+    au BufRead,BufNewFile *.go setfiletype go
+
+    au BufWinEnter *.scss set filetype=css
+
+    au BufWinEnter *.thrift set filetype=thrift
 augroup END
-
-" Vala
-autocmd BufRead *.vala set efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
-autocmd BufRead *.vapi set efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
-au BufRead,BufNewFile *.vala            setfiletype vala
-au BufRead,BufNewFile *.vapi            setfiletype vala
-
-" Markdown
-au BufRead,BufNewFile *.{md,mdown,mkd,mkdn,markdown,mdwn}   set filetype=mkd
