@@ -19,21 +19,6 @@ if has('gui_running')
     "highlight Normal ctermfg=LightGrey ctermbg=NONE
 endif
 
-" eyecandy
-"set statusline=%<%F%h%m%r%h%w\ %y\ %{&ff}\ %{strftime(\"%d/%m/%Y\ -\ %H:%M\")}%=\ col:%c%V\ lin:%l\ %P
-set laststatus=2
-set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
-if ! has('gui_running')
-    set ttimeoutlen=10
-    augroup FastEscape
-        autocmd!
-        au InsertEnter * set timeoutlen=0
-        au InsertLeave * set timeoutlen=1000
-    augroup END
-endif
-set noshowmode
-
-
 set number
 
 " Keep 3 lines after/before the cursor
@@ -43,3 +28,5 @@ set so=3
 au WinLeave * set nocursorline nocursorcolumn
 au WinEnter * set cursorline cursorcolumn
 set cursorline
+
+syntax on

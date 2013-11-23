@@ -6,7 +6,3 @@ so ~/.vim/rcs/dev.vim
 so ~/.vim/rcs/eye-candy.vim
 so ~/.vim/rcs/misc.vim
 so ~/.vim/rcs/windows.vim
-
-if has('gui_macvim')
-    so ~/.vim/rcs/mac.vim
-endif
