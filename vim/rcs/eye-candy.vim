@@ -1,6 +1,6 @@
 let &t_Co=256
-set background=dark
-colors jellybeans
+set background=light
+colors solarized
 highlight Normal ctermfg=LightGrey ctermbg=NONE
 
 set showcmd " show incomplete commands
@@ -15,8 +15,16 @@ if has('gui_running')
     set guioptions-=r  "remove right scrollbar
     set guioptions-=L  "remove left scrollbar
     set showtabline=2
-    set transparency=3
-    "highlight Normal ctermfg=LightGrey ctermbg=NONE
+
+    " If we are using the GUI, use proper fonts
+    let g:airline_powerline_fonts = 1
+    set guifont=Sauce\ Code\ Powerline
+
+    " Make it transparent just in the Mac
+    let os=substitute(system('uname'), '\n', '', '')
+    if os == 'Darwin' || os == 'Mac'
+        set transparency=3
+    endif
 endif
 
 set number
@@ -30,3 +38,6 @@ au WinEnter * set cursorline cursorcolumn
 set cursorline
 
 syntax on
+
+" Fix problem with vim-airline not showing the status line until you split
+set laststatus=2
