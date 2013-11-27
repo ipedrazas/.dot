@@ -13,6 +13,7 @@ alias doctest='python -m doctest'
 alias maild="sudo python -c 'import smtpd, asyncore; smtpd.DebuggingServer((\"127.0.0.1\", 25), None); asyncore.loop()'"
 alias ff='find . -iname'
 alias debug='cat > /tmp/debug.html&&w3m /tmp/debug.html'
+alias vi='vim'
 
 # Path variables
 if [ -e $HOME/bin ]; then
@@ -35,7 +36,7 @@ alias unquote="python -c 'import sys, urllib; print urllib.unquote_plus(sys.argv
 # oh-my-zsh confs
 # This is the project page: https://github.com/robbyrussell/oh-my-zsh/
 ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="random"
+ZSH_THEME="ys"
 plugins=(git mercurial virtualenvwrapper svn python github)
 source $ZSH/oh-my-zsh.sh
 
@@ -43,16 +44,6 @@ setopt nocorrect_all
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
-
-# For lazy people like as mitsuhiko :D
-from() { expect -c "spawn -noecho python
-expect \">>> \"
-send \"from $*\r\"
-interact +++ return"; }
-import() { expect -c "spawn -noecho python
-expect \">>> \"
-send \"import $*\r\"
-interact +++ return"; }
 
 # No autocompletion
 alias git="nocorrect git"

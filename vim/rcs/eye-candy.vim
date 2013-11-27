@@ -1,7 +1,6 @@
 let &t_Co=256
-set background=light
-colors solarized
-highlight Normal ctermfg=LightGrey ctermbg=NONE
+
+"highlight Normal ctermfg=LightGrey ctermbg=NONE
 
 set showcmd " show incomplete commands
 filetype plugin on
@@ -10,6 +9,9 @@ set backspace=indent,eol,start
 
 " Color for GUI
 if has('gui_running')
+    set background=light
+    colors solarized
+
     set guioptions-=m  "remove menu bar
     set guioptions-=T  "remove toolbar
     set guioptions-=r  "remove right scrollbar
@@ -25,6 +27,10 @@ if has('gui_running')
     if os == 'Darwin' || os == 'Mac'
         set transparency=3
     endif
+else
+    " I don't really like solarized on console
+    set background=dark
+    colors jelleybeans
 endif
 
 set number

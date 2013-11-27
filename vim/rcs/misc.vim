@@ -44,3 +44,6 @@ let g:ctrlp_custom_ignore = {
 
 " let's write properly
 set spell
+
+" no beeps at all
+set noeb vb t_vb=
