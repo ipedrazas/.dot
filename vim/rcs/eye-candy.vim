@@ -1,6 +1,9 @@
 let &t_Co=256
 
 "highlight Normal ctermfg=LightGrey ctermbg=NONE
+let g:dark_colorscheme = "jelleybeans"
+let g:light_colorscheme = "solarized"
+map <silent><F11> :ToggleBg<CR>
 
 set showcmd " show incomplete commands
 filetype plugin on
@@ -9,8 +12,7 @@ set backspace=indent,eol,start
 
 " Color for GUI
 if has('gui_running')
-    set background=light
-    colors solarized
+    let g:default_background_type = "light"
 
     set guioptions-=m  "remove menu bar
     set guioptions-=T  "remove toolbar
@@ -28,9 +30,7 @@ if has('gui_running')
         set transparency=3
     endif
 else
-    " I don't really like solarized on console
-    set background=dark
-    colors jelleybeans
+    let g:default_background_type = "dark"
 endif
 
 set number
