@@ -26,7 +26,8 @@ autocmd! bufwritepost .vimrc source %
 autocmd! bufwritepost ~/.vim/rcs/* source %
 
 "NERDTree
-autocmd vimenter * if !argc() | NERDTree | endif
+" I don't want to show it by default now
+"autocmd vimenter * if !argc() | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 map <F9> :NERDTreeToggle<CR>
 let NERDTreeShowBookmarks=1
