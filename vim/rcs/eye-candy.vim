@@ -31,6 +31,9 @@ if has('gui_running')
     endif
 else
     let g:default_background_type = "dark"
+    autocmd VimEnter,ColorScheme,SourceCmd * hi clear SpellBad
+    autocmd VimEnter,ColorScheme,SourceCmd * hi SpellBad cterm=underline ctermfg=red
+    autocmd VimEnter,ColorScheme,SourceCmd * hi Search cterm=underline ctermfg=green
 endif
 
 set number
