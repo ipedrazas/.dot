@@ -49,3 +49,5 @@ export PATH="/usr/local/heroku/bin:$PATH"
 alias git="nocorrect git"
 alias sbt="nocorrect sbt"
 alias play="nocorrect play"
+
+export TERM=xterm-256color

@@ -79,6 +79,9 @@ warning_if_exists terminator
 ln -s $PWD/gitconfig ~/.gitconfig &>> /dev/null
 warning_if_exists git
 
+ln -s $PWD/tmux.conf ~/.tmux.conf &>> /dev/null
+warning_if_exists tmux
+
 ln -s $PWD/pdbrc ~/.pdbrc &>> /dev/null
 # Don't need to check
 

@@ -6,3 +6,5 @@ so ~/.vim/rcs/dev.vim
 so ~/.vim/rcs/eye-candy.vim
 so ~/.vim/rcs/misc.vim
 so ~/.vim/rcs/windows.vim
+
+set fenc=utf-8
