@@ -88,3 +88,6 @@
 [submodule "vim/bundle/vim-colortoggle"]
 	path = vim/bundle/vim-colortoggle
 	url = git@github.com:agonzalezro/vim-colortoggle.git
+[submodule "vim/bundle/vim-compiler-go"]
+	path = vim/bundle/vim-compiler-go
+	url = https://github.com/rjohnsondev/vim-compiler-go.git

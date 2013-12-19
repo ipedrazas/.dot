@@ -37,7 +37,7 @@ alias unquote="python -c 'import sys, urllib; print urllib.unquote_plus(sys.argv
 # This is the project page: https://github.com/robbyrussell/oh-my-zsh/
 ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="ys"
-plugins=(git mercurial virtualenvwrapper svn python github)
+plugins=(git mercurial virtualenvwrapper svn python github tmux)
 source $ZSH/oh-my-zsh.sh
 
 setopt nocorrect_all
