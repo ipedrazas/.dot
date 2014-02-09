@@ -29,9 +29,11 @@ export EDITOR="vim"
 alias manage="python manage.py"
 alias mgr="python manage.py runserver"
 alias mgs="python manage.py shell"
-alias mgd="python manage.py dbshell"\
+alias mgd="python manage.py dbshell"
 alias tree="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/   /' -e 's/-/|/'"
 alias unquote="python -c 'import sys, urllib; print urllib.unquote_plus(sys.argv[1])'"
+alias golint="go run $HOME/go/src/github.com/golang/lint/golint/golint.go"
+alias jsonize="python -mjson.tool"
 
 # oh-my-zsh confs
 # This is the project page: https://github.com/robbyrussell/oh-my-zsh/
@@ -44,6 +46,7 @@ setopt nocorrect_all
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+export GOPATH="$HOME/go"
 
 # No autocompletion
 alias git="nocorrect git"

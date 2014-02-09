@@ -4,6 +4,7 @@ let &t_Co=256
 let g:dark_colorscheme = "jelleybeans"
 let g:light_colorscheme = "solarized"
 map <silent><F11> :ToggleBg<CR>
+let g:default_background_type = "dark"
 
 set showcmd " show incomplete commands
 filetype plugin on
@@ -12,8 +13,6 @@ set backspace=indent,eol,start
 
 " Color for GUI
 if has('gui_running')
-    let g:default_background_type = "light"
-
     set guioptions-=m  "remove menu bar
     set guioptions-=T  "remove toolbar
     set guioptions-=r  "remove right scrollbar
@@ -22,7 +21,7 @@ if has('gui_running')
 
     " If we are using the GUI, use proper fonts
     let g:airline_powerline_fonts = 1
-    set guifont=Sauce\ Code\ Powerline
+    set guifont=Sauce\ Code\ Powerline\ Light
 
     " Make it transparent just in the Mac
     let os=substitute(system('uname'), '\n', '', '')
@@ -30,7 +29,6 @@ if has('gui_running')
         set transparency=3
     endif
 else
-    let g:default_background_type = "dark"
     autocmd VimEnter,ColorScheme,SourceCmd * hi clear SpellBad
     autocmd VimEnter,ColorScheme,SourceCmd * hi SpellBad cterm=underline ctermfg=red
     autocmd VimEnter,ColorScheme,SourceCmd * hi Search cterm=underline ctermfg=green
